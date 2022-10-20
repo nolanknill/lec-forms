@@ -1,3 +1,19 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 div {
   margin: 1rem;
+}
+
+input, select {
+  padding: 0.5rem;
+}
+
+.form__submit {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: orange;
+  border: none;
+  border-radius: 0.25rem;
 }/*# sourceMappingURL=style.css.map */

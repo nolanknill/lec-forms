@@ -11,8 +11,59 @@
 
 <body>
     <h1>Lecture: Intro to HTML Forms</h1>
-    <form>
-        <!-- Form goes here -->
+    <form class="form">
+        <h2>Puppy Play Date Sign Up</h2>
+        
+        <div>
+            <label for="name">Name: </label>
+            <input id="name" placeholder="Enter name..." type="text" name="name">
+        </div>
+
+        <div>
+            <label for="email">Email: </label>
+            <input id="email" placeholder="Enter email..." type="email" name="email">
+        </div>
+
+        <div>
+            <label for="phone">Phone number: </label>
+            <input id="phone" placeholder="Enter phone number..." type="tel" name="phone">
+        </div>
+
+        <!-- Radio button for preferred contact method -->
+        <fieldset>
+            <legend>Preferred Contact Method</legend>
+            <div>
+                <input id="preferEmail" name="contactMethod" value="email" type="radio">
+                <label for="preferEmail">Email</label>
+            </div>
+
+            <div>
+                <input id="preferPhone" name="contactMethod" value="phone" type="radio">
+                <label for="preferPhone">Phone</label>
+            </div>
+        </fieldset>
+
+        <div>
+            <span>Purpose of play date:</span>
+            <select name="visitPurpose">
+                <option value="">-- Please select a purpose --</option>
+                <option value="Cure Loneliness">Cure Loneliness</option>
+                <option value="Reduce Stress">Reduce Stress</option>
+                <option value="Due to Cuteness">Due to Cuteness</option>
+                <option value="No reason">No reason</option>
+            </select>
+        </div>
+
+        <div>
+            <input id="agreeToFun" name="agreeToFun" type="checkbox">
+            <label for="agreeToFun">Do you agree to have the best puppy play date ever?</label>
+        </div>
+
+        <div>
+            <button class="form__submit">Sign Up</button>
+        </div>
+
+
     </form>
 </body>
 
