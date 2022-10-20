@@ -10,6 +10,9 @@ input, select {
   padding: 0.5rem;
 }
 
+.form--hidden {
+  display: none;
+}
 .form__submit {
   padding: 0.5rem 1rem;
   font-size: 1rem;
