@@ -14,12 +14,17 @@ input, select {
     &--hidden {
         display: none;
     }
-    
+
     &__submit {
         padding: 0.5rem 1rem;
         font-size: 1rem;
         background-color: orange;
         border: none;
         border-radius: 0.25rem;
+    }
+
+    &__error-message {
+        background-color: rgba(255, 109, 109, 0.797);
+        color: white;
     }
 }

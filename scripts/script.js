@@ -18,7 +18,7 @@ signUpFormEl.addEventListener("submit", (event) => {
     const phone = event.target.phone.value;
     const contactMethod = event.target.contactMethod.value;
     const visitPurpose = event.target.visitPurpose.value;
-    const agreeToFun = event.target.agreeToFun.value;
+    const agreeToFun = event.target.agreeToFun.checked;
 
     console.log("name", name);
     console.log("email", email);
@@ -27,7 +27,16 @@ signUpFormEl.addEventListener("submit", (event) => {
     console.log("visitPurpose", visitPurpose);
     console.log("agreeToFun", agreeToFun);
 
-    //showSuccessMessage 
+    // If invalid form -> return;
+    if (!name || !email || !phone || !contactMethod || !visitPurpose || !agreeToFun) {
+        //invalid form, handle accordingly
+
+        const errorMessageEl = document.getElementById("error-message");
+        errorMessageEl.innerText = "All form fields are required";
+        
+        return;
+    }
+
     signUpFormEl.classList.add("form--hidden");
 
     /*
