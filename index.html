@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture: Document Object Model</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__page-title">Lecture: Document Object Model</h1>
+    </header>
+    <main>
+        <section>
+            <h2 id="tv-shows-title">Cohort's Favorite TV Shows</h2>
+            
+            <form class="add-show-form" id="add-show-form">
+                <div class="add-show-form__input-container">
+                    <label for="title">Title:</label>
+                    <input class="add-show-form__input" id="title" type="text" placeholder="Title" name="title" />
+                    <p class="add-show-form__error-message--title">Title is required</p>
+                </div>
+                <div class="add-show-form__input-container">
+                    <label for="rating">Rating:</label>
+                    <input class="add-show-form__input" id="rating" type="text" placeholder="Rating" name="rating" />
+                    <p class="add-show-form__error-message--rating">Rating must be a number.</p>
+                <div class="add-show-form__input-container">
+                    <label>Image URL:
+                        <input class="add-show-form__input" type="url" placeholder="Image URL" name="imageSrc" />
+                    </label>
+                    <p class="add-show-form__error-message--image-src">Image URL is required.</p>
+                </div>
+                <button class="add-show-form__button">Add TV Show</button> 
+            </form>
+            
+            <div id="tv-shows" class="tv-shows">
+
+            </div>
+        </section>
+        <!--
+        <form class="form">
+            <label>Email: <input type="text" name="email" class="form__email-input"/></label>
+        </form>
+        -->
+    </main>
+    <!-- <script src="./script.js"></script> -->
+    <script src="./tv-shows.js"></script>
+</body>
+</html>

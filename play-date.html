@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puppy Play Date</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__page-title">Puppy Play Date</h1>
+    </header>
+    <main>
+        <form>
+            <div>
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name" required>
+            </div>
+
+            <div>
+                <label for="email">Email Address: </label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div>
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" name="phoneNumber" id="phoneNumber" required>
+            </div>
+
+            <fieldset>
+                <legend>Preferred contact method:</legend>
+                
+                <label for="preferPhone">Phone</label>
+                <input type="radio" id="preferPhone" value="phone" name="contactMethod">
+                
+                <label for="preferEmail">Email</label>
+                <input type="radio" id="preferEmail" value="email" name="contactMethod">
+            
+            </fieldset>
+
+        <div>
+            <span>Purpose of your Play Date:</span>
+            <select name="visitPurpose">
+                <option value="Cuddles">Cuddles</option>
+                <option value="Reduce Stress">Reduce Stress</option>
+                <option value="Socialization">Socialization</option>
+                <option value="Exercise">Exercise</option>
+            </select>
+
+        </div>
+
+
+<div>
+    <label for="agreeToFun">Do you agree to have the best puppy play date ever?</label>
+    <input type="checkbox" name="agreeToFun" id="agreeToFun">
+</div>
+
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+    <script src="./play-date.js"></script>
+</body>
+
+</html>
